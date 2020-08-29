@@ -1,0 +1,117 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Cronos</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link href="img/icon.ico" rel="icon" sizes="16x16">
+    <link href="css/basico.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+</head>
+<body>
+<!------------------------- ENCABEZADO -->
+    <header>
+        <div class="dlogos"><!--<img src="img/logo.png">--></div>
+        <div class="dmenus">
+            <ul>
+                <li><b>Login</b></li>
+                <li><b>Contacto</b></li>
+                <li><b>Soluciones</b></li>
+                <li><b>Productos</b></li>
+                <li><b>La empresa</b></li>
+            </ul>
+        </div>
+    </header>
+<!------------------------- CONTENIDO -->
+    <section>
+        <aside>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- INICIO -->
+                    <div class="swiper-slide">
+                        <div class="dprese p3"></div>
+                        <div class="descri">
+                            <h1>¡Reparamos tus equipos informáticos!</h1>
+                            <h2>Contamos con especialistas en reparación y mantenimiento de equipos tecnológicos quienes te brindarán solución y soporte a tus problemas.</h2>
+                            <h3>Conocé más  ></h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dprese p1"></div>
+                        <div class="descri">
+                            <h1>¡Construimos Redes de datos LAN y MAN!</h1>
+                            <h2>Realizamos soporte, diseño, implementación y mantenimiento de redes con cableado estructurado e inalambrica.</h2>
+                            <h3>Conocé más  ></h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dprese p4"></div>
+                        <div class="descri">
+                            <h1>¡Desarrollamos software a medida!</h1>
+                            <h2>Integramos el sistema ideal para tu negocio, trabajo o emprendimento. Con la más alta calidad, soporte y disponibilidad en tus necesidades.</h2>
+                            <h3>Conocé más  ></h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="dprese p2"></div>
+                        <div class="descri">
+                            <h1>¡Tu hogar en tus manos!</h1>
+                            <h2>Primeros en la región. A través de tu celular podrás contralar todo lo que sucede en tu casa, desde cualquier parte del mundo podrás ver el estado de tu domicilio.</h2>
+                            <h3>Conocé más  ></h3>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </aside>
+        <article>
+            <div class="lprodu">
+                <h1>Smart Home</h1>
+                <p>Automátizá tus ambientes, programá las luces, controlá tu casa.</p>
+                <b>Ver más  ></b>
+                <div class='smarth'></div>
+            </div>
+            <div class="lprodu">
+                <h1>APPs</h1>
+                <p>Diseño, Programación y Publicación de Mobile Apps para Android + IOS.</p>
+                <b>Ver más  ></b>
+                <div class='appsai'></div>
+            </div>
+            <div class="lprodu">
+                <h1>Cámaras</h1>
+                <p>Desde donde estés podras visualizar lo que sucede en tu hogar.</p>
+                <b>Ver más  ></b>
+                <div class='camara'></div>
+            </div>
+        </article>
+    </section>
+<!------------------------- SCRIPT -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/basico.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var donde = 'admin';
+        var swiper = new Swiper('.swiper-container',{
+            //effect: 'coverflow',
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            centeredSlides: true,
+            //grabCursor: true,
+            coverflowEffect: {
+                rotate: 100,
+                slideShadows: false,
+            },
+            autoplay:{
+                delay: 10000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            },
+        });
+    </script>
+</body>
